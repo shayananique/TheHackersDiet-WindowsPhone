@@ -1,0 +1,3 @@
+[submodule "externals/parse-dotnet"]
+	path = externals/parse-dotnet
+	url = git@github.com:wadewegner/parse-dotnet.git

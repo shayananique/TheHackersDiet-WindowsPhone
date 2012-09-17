@@ -3,6 +3,10 @@ Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HackersDiet.Phone", "HackersDiet.Phone\HackersDiet.Phone.csproj", "{93616E98-A876-4A2A-81DA-25D184AFC48F}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "externals", "externals", "{91789434-67DA-4904-8445-390F62ED79F5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Parse", "..\externals\parse-dotnet\Parse\Parse.csproj", "{7C665CCD-7531-4AEA-9425-6831A3F84BB9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,8 +19,15 @@ Global
 		{93616E98-A876-4A2A-81DA-25D184AFC48F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{93616E98-A876-4A2A-81DA-25D184AFC48F}.Release|Any CPU.Build.0 = Release|Any CPU
 		{93616E98-A876-4A2A-81DA-25D184AFC48F}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{7C665CCD-7531-4AEA-9425-6831A3F84BB9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7C665CCD-7531-4AEA-9425-6831A3F84BB9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7C665CCD-7531-4AEA-9425-6831A3F84BB9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7C665CCD-7531-4AEA-9425-6831A3F84BB9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{7C665CCD-7531-4AEA-9425-6831A3F84BB9} = {91789434-67DA-4904-8445-390F62ED79F5}
 	EndGlobalSection
 EndGlobal

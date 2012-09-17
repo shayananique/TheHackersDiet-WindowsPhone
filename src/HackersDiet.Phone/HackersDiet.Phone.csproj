@@ -89,6 +89,12 @@
     </Content>
     <Content Include="SplashScreenImage.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\externals\parse-dotnet\Parse\Parse.csproj">
+      <Project>{7C665CCD-7531-4AEA-9425-6831A3F84BB9}</Project>
+      <Name>Parse</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\Silverlight for Phone\$(TargetFrameworkVersion)\Microsoft.Silverlight.$(TargetFrameworkProfile).Overrides.targets" />
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\Silverlight for Phone\$(TargetFrameworkVersion)\Microsoft.Silverlight.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
