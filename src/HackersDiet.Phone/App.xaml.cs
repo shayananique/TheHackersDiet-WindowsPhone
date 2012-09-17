@@ -12,6 +12,7 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using Microsoft.Phone.Controls;
 using Microsoft.Phone.Shell;
+using Parse;
 
 namespace HackersDiet.Phone
 {
@@ -57,6 +58,10 @@ namespace HackersDiet.Phone
                 PhoneApplicationService.Current.UserIdleDetectionMode = IdleDetectionMode.Disabled;
             }
 
+            ParseConfiguration.Configure(
+                "vV2inhUAAe24zNN7LE51u1777EpZS9kIRwTtMBB7",
+                "xt3ZYFM2Qz0OtZD3lasXlGykS4MkO4UUPJ0eVrN9",
+                "NEulp8VdPTMsFS4360bl590F14GBwvSdyxG95NuU");
         }
 
         // Code to execute when the application is launching (eg, from Start)
@@ -116,7 +121,11 @@ namespace HackersDiet.Phone
 
             // Create the frame but don't set it as RootVisual yet; this allows the splash
             // screen to remain active until the application is ready to render.
-            RootFrame = new PhoneApplicationFrame();
+
+            // Chagned to TransitionFrame to resolve emulator repaint issue with Intel HD Graphics 4000; 
+            // see http://social.msdn.microsoft.com/forums/en-us/wptools/thread/11321a00-6d20-4d05-bce4-d2e5685c324b
+            // for details
+            RootFrame = new TransitionFrame();
             RootFrame.Navigated += CompleteInitializePhoneApplication;
 
             // Handle navigation failures
