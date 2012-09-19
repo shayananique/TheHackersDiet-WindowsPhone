@@ -67,13 +67,25 @@
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Models\LadderModel.cs" />
+    <Compile Include="Models\RungModel.cs" />
+    <Compile Include="Pages\DisplayLadderLog.xaml.cs">
+      <DependentUpon>DisplayLadderLog.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Pages\RecordLadderLog.xaml.cs">
       <DependentUpon>RecordLadderLog.xaml</DependentUpon>
     </Compile>
     <Compile Include="Pages\RecordWeight.xaml.cs">
       <DependentUpon>RecordWeight.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Pages\UpdateLadderLog.xaml.cs">
+      <DependentUpon>UpdateLadderLog.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ViewModels\Constants.cs" />
+    <Compile Include="ViewModels\LadderContext.cs" />
+    <Compile Include="ViewModels\LadderState.cs" />
+    <Compile Include="ViewModels\List.cs" />
   </ItemGroup>
   <ItemGroup>
     <ApplicationDefinition Include="App.xaml">
@@ -84,11 +96,19 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Pages\DisplayLadderLog.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Pages\RecordLadderLog.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Pages\RecordWeight.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\UpdateLadderLog.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -105,6 +125,12 @@
     <Content Include="Background.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="Images\appbar.back.rest.png" />
+    <Content Include="Images\appbar.save.rest.png" />
+    <Content Include="Images\appbar.cancel.rest.png" />
+    <Content Include="Images\appbar.delete.rest.png" />
+    <Content Include="Images\appbar.add.rest.png" />
+    <Content Include="Images\appbar.questionmark.rest.png" />
     <Content Include="SplashScreenImage.jpg" />
     <Content Include="Toolkit.Content\ApplicationBar.Cancel.png" />
     <Content Include="Toolkit.Content\ApplicationBar.Check.png" />

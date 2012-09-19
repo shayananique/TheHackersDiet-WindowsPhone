@@ -13,6 +13,8 @@ using System.Windows.Shapes;
 using Microsoft.Phone.Controls;
 using Microsoft.Phone.Shell;
 using Parse;
+using HackersDiet.Phone.Models;
+using HackersDiet.Phone.ViewModels;
 
 namespace HackersDiet.Phone
 {
@@ -23,6 +25,8 @@ namespace HackersDiet.Phone
         /// </summary>
         /// <returns>The root frame of the Phone Application.</returns>
         public PhoneApplicationFrame RootFrame { get; private set; }
+        public LadderContext LadderInfo;
+
 
         /// <summary>
         /// Constructor for the Application object.
@@ -62,6 +66,8 @@ namespace HackersDiet.Phone
                 "vV2inhUAAe24zNN7LE51u1777EpZS9kIRwTtMBB7",
                 "xt3ZYFM2Qz0OtZD3lasXlGykS4MkO4UUPJ0eVrN9",
                 "NEulp8VdPTMsFS4360bl590F14GBwvSdyxG95NuU");
+
+            this.LadderInfo = LadderState.LoadLadderContext();
         }
 
         // Code to execute when the application is launching (eg, from Start)

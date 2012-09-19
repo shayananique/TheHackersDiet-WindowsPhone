@@ -20,5 +20,17 @@ namespace HackersDiet.Phone
         {
             InitializeComponent();
         }
+
+        private void RecordDailyLadderButton_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new Uri("/Pages/RecordLadderLog.xaml", UriKind.Relative));
+        }
+
+        private void DisplayDailyLadderButton_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new Uri("/Pages/DisplayLadderLog.xaml", UriKind.Relative));
+        }
+
+   
     }
 }
