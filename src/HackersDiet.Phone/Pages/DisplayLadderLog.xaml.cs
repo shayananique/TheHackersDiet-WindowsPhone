@@ -74,7 +74,14 @@ namespace HackersDiet.Phone.Pages
 
         private void ListLadders_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
+            int index = (sender as ListBox).SelectedIndex;
 
+            LadderModel selectedLadder = ((sender as ListBox).SelectedItem as LadderModel);
+
+            if (index >= 0)
+            {
+                NavigationService.Navigate(new Uri("/Pages/RecordLadderLog.xaml?id=" + selectedLadder.Id, UriKind.Relative));
+            }
         }
     }
 }

@@ -78,14 +78,10 @@
     <Compile Include="Pages\RecordWeight.xaml.cs">
       <DependentUpon>RecordWeight.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Pages\UpdateLadderLog.xaml.cs">
-      <DependentUpon>UpdateLadderLog.xaml</DependentUpon>
-    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="ViewModels\Constants.cs" />
+    <Compile Include="Models\Constants.cs" />
     <Compile Include="ViewModels\LadderContext.cs" />
     <Compile Include="ViewModels\LadderState.cs" />
-    <Compile Include="ViewModels\List.cs" />
   </ItemGroup>
   <ItemGroup>
     <ApplicationDefinition Include="App.xaml">
@@ -105,10 +101,6 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Pages\RecordWeight.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Pages\UpdateLadderLog.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

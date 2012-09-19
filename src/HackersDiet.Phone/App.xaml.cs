@@ -68,6 +68,7 @@ namespace HackersDiet.Phone
                 "NEulp8VdPTMsFS4360bl590F14GBwvSdyxG95NuU");
 
             this.LadderInfo = LadderState.LoadLadderContext();
+            this.LadderInfo.Rungs.Insert(0, new RungModel() { Rung = "Select a Rung" });
         }
 
         // Code to execute when the application is launching (eg, from Start)

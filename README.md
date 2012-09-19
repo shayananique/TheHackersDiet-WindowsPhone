@@ -5,11 +5,11 @@ There's still a lot to do. My goal is for the application to eventually explore 
 
 **Objects**
 
-* Create objects (done)
-* Retrive objects (in progress)
-* Update objects (in progress)
-* Query objects (done)
-* Delete objects (in progress)
+* Create objects **(done)**
+* Retrive objects **(done)**
+* Update objects **(done)**
+* Query objects **(done)**
+* Delete objects **(done)**
 
 **Users**
 
